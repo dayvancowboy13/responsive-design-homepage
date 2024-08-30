@@ -9,7 +9,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     /* font-size: larger; */
 }
 
@@ -20,6 +20,8 @@ body {
     /* padding-top: 50px; */
 }
 
+/* ****HEADER STYLE**** */
+
 header {
     display: flex;
     flex-direction: row;
@@ -28,7 +30,7 @@ header {
     padding-top: 50px;
 }
 
-header h1 {
+h1 {
     font-style: inherit;
     font-size: 2.5em;
     margin: 0;
@@ -53,11 +55,7 @@ header .img-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 150px;
-
-    /* background-color: white; */
     padding: 5px;
-    /* margin: 8px; */
-
 }
 
 #about-me {
@@ -71,6 +69,67 @@ header .img-container {
     border: 1px black dashed;
     /* margin: px; */
     /* box-shadow: 5px black; */
+}
+
+/* ****MAIN BODY STYLE**** */
+
+#main-container {
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+}
+
+#card-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+    margin: 1em var(--left-right-margin) 2em;
+}
+
+.work-card {
+    width: auto;
+    max-height: 500px;
+    border: solid black 1px;
+    box-shadow: 0px 0px 5px black;
+
+
+    display: flex;
+    flex-direction: column;
+
+    & .img-container {
+        height: 100px;
+        background-color: black;
+        opacity: 50%;
+    }
+
+    & h1 {
+        font-size: xx-large;
+    }
+
+    & .social-media-links {
+        max-width: 5em;
+        gap: 1em;
+        margin-left: 15px;
+    }
+}
+
+.card-body {
+    display: grid;
+    /* grid: repeat(4, 50px) / auto-flow; */
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    gap: 5px 10px;
+    padding: 0.6em .5em;
+
+    & :nth-child(3) {
+        display: block;
+        grid-column: auto / span 2;
+    }
+}
+
+.project-links {
+    gap: 10px;
 }
 
 footer {
