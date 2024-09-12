@@ -3,7 +3,7 @@ import portraitImg from './images/portrait.png';
 import ProjectScrnSht from './images/project-screenshot.png';
 import bottomPhoto from './images/bottom-photo.png';
 import mePortrait from './images/me_portrait.jpg';
-import bottomPortrait from './images/bottom-portrait-350x480.png';
+import bottomPortrait from './images/bottom-portrait-780x975.png';
 import meWide from './images/bottom-wide-600x450.png';
 import meTop from './images/me-header-450x500.png';
 
